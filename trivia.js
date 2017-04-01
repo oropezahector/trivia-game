@@ -78,12 +78,12 @@ function resetWL() {
 
 // Display Game State
 function outputStats() {
-    var winText = '<h3>Number of correct answers = '+timesWon+'</h3>';
-    var loseText = "Number of wrong answers = " + timesLost;
-    var unanswerText = "Number of unanswered questions = " + triviaUnaswered;
-    $('#winLose').append("<div class='wins'>" + winText + "</div>");
-    $('#winLose').append("<div class='lose'>" + loseText + "</div>");
-    $('#winLose').append("<div class='unAns'>" + unanswerText + "</div>")
+    var winText = '<h3>Correct answers = '+timesWon+'</h3>';
+    var loseText = "Wrong answers = " + timesLost;
+    var unanswerText = "Unanswered questions = " + triviaUnaswered;
+    $('#winLose').append("<div>" + winText + "</div>");
+    $('#winLose').append("<div>" + loseText + "</div>");
+    $('#winLose').append("<div>" + unanswerText + "</div>")
 }
 
 
